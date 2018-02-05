@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Category.create([{ name: 'lorem ipsum', slug: 'lorem-ipsum', description: 'lorem ipsum dolor' }])
+
+Post.create([{ title: 'Premier post', content: 'lorem ipsum dolor', status: true }])
