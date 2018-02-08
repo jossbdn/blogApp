@@ -12,7 +12,12 @@
     <header>
       <nav class="navbar navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">BlogApp</a>
+          <%= link_to 'BlogApp', posts_path %>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <%= link_to 'connexion', new_user_session_path %>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
