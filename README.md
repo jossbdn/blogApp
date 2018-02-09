@@ -17,13 +17,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+Seed the database
 
 ```
 rails db:seed
 ```
 
-And repeat
+Run the serv
 
 ```
 rails s
