@@ -5,6 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'omniauth-discord'
+
+gem 'omniauth-dribbble'
+
+gem 'omniauth-facebook'
+
+gem 'omniauth-github'
+
 gem 'bootstrap', '~> 4.0.0'
 
 gem 'devise'
