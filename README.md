@@ -23,7 +23,7 @@ Seed the database
 rails db:seed
 ```
 
-Run the serv
+Run the server
 
 ```
 rails s
