@@ -1,24 +1,30 @@
-# README
+# Ruby On Rails Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App build with Ruby On Rails
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+* [Ruby On Rails](http://guides.rubyonrails.org/) - The web framework used
+* [SQLite3](https://www.sqlite.org/) - SQLite database
+* [Devise](https://github.com/plataformatec/devise) - Flexible authentication solution for Rails based on Warden.
+* [OmniAuth](https://github.com/omniauth/omniauth) - Standardized Multi-Provider Authentication
 
-* System dependencies
+## Getting Started
 
-* Configuration
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-* Database creation
+### Installing
 
-* Database initialization
+A step by step series of examples that tell you have to get a development env running
 
-* How to run the test suite
+Seed the database
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails db:seed
+```
 
-* Deployment instructions
+Run the server
 
-* ...
+```
+rails s
+```
