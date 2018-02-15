@@ -5,7 +5,21 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'local_time'
 
+gem 'simple_form'
+
+gem 'omniauth-discord'
+
+gem 'omniauth-dribbble'
+
+gem 'omniauth-facebook'
+
+gem 'omniauth-github'
+
+gem 'bootstrap', '~> 4.0.0'
+
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record

@@ -1,0 +1,16 @@
+<nav class="mt-5" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Home', controller: 'posts', action: 'index' %></li>
+    <li class="breadcrumb-item"><%= link_to 'Posts', controller: 'posts', action: 'index' %></li>
+    <li class="breadcrumb-item active" aria-current="page">New</li>
+  </ol>
+</nav>
+
+<%= simple_form_for @post do |f| %>
+
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.input :status, label: 'Brouillon' %>
+  <%= f.button :submit %>
+
+<% end %>
