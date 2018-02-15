@@ -13,7 +13,4 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-<<<<<<< HEAD
-=======
 //= require local-time
->>>>>>> dev
