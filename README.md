@@ -6,8 +6,10 @@ App build with Ruby On Rails
 
 * [Ruby On Rails](http://guides.rubyonrails.org/) - The web framework used
 * [SQLite3](https://www.sqlite.org/) - SQLite database
-* [Devise](https://github.com/plataformatec/devise) - Flexible authentication solution for Rails based on Warden.
-* [OmniAuth](https://github.com/omniauth/omniauth) - Standardized Multi-Provider Authentication
+* [Devise](https://github.com/plataformatec/devise) - Flexible authentication solution for Rails.
+* [OmniAuth](https://github.com/omniauth/omniauth) - Standardized Multi-Provider Authentication.
+* [Simple Form](https://github.com/plataformatec/simple_form) - Rails forms made easy.
+* [Local Time](https://github.com/basecamp/local_time) - Local Time makes it easy to display times and dates.
 
 ## Getting Started
 
@@ -21,6 +23,18 @@ Install gems
 
 ```
 bundle install
+```
+
+Migrate database
+
+```
+rails db:migrate
+```
+
+Seed database
+
+```
+rails db:seed
 ```
 
 Run the server
