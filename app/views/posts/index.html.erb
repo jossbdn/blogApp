@@ -4,7 +4,7 @@
 
 <div class="row col-sm-12">
   <div class="col-sm-3">
-    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card text-white bg-primary">
       <div class="card-body">
         <h5 class="card-title">Create your own post</h5>
         <p class="card-text">Lorem ipsum</p>
@@ -14,7 +14,7 @@
   </div>
   <% @posts.each do |post| %>
     <div class="col-sm-3">
-      <div class="card" style="width: 18rem;">
+      <div class="card">
         <div class="card-body">
           <h5 class="card-title"><%= post.title %></h5>
           <p class="card-text"><%= post.content %></p>
