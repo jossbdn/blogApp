@@ -4,6 +4,7 @@ class CreateComments < ActiveRecord::Migration[5.1]
       t.text :content
       t.boolean :status
       t.timestamps
+
     end
   end
 end
