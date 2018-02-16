@@ -8,7 +8,7 @@
 
 <article class="card mt-5">
   <div class="card-body">
-    <h1><%= @post.title %> <span class="badge"><%= link_to @post.user.email, user_path(@post.user_id)  %></span></h1>
+    <h1><%= @post.title %> <span class="badge"><%= link_to @post.user.username, user_path(@post.user_id)  %></span></h1>
     <h6><%= local_time_ago(@post.updated_at) %></h6>
     <% if @post.user_id == current_user.id %>
       <%= link_to 'Edit', edit_post_path, class: 'btn btn-info' %>
