@@ -10,11 +10,8 @@ default: &default
   timeout: 5000
 
 development:
-  adapter: mysql2
-  database: ror_blog_app
-  username: root
-  password: root
-  host: localhost
+  <<: *default
+  database: db/development.sqlite3
 
   #<<: *default
   #database: db/development.sqlite3
