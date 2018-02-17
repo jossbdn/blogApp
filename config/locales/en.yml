@@ -30,4 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  login: "Login"
+
+
+  posts: "Posts"
+  createYourOwnPost: "Create your own post"
+  new: "New"
+  show: "Show"
+
+  myAccount: "My account"

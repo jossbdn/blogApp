@@ -2,7 +2,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
-    @title = 'Posts'
   end
 
   def show
