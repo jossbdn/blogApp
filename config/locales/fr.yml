@@ -1,0 +1,12 @@
+fr:
+  login: 'Connexion'
+  home: 'Accueil'
+
+  posts: 'Articles'
+  createYourOwnPost: 'Créez votre article'
+  new: 'Nouveau'
+  show: 'Lire'
+  createPost: 'Créer l'article'
+
+  myAccount: 'Mon compte'
+
