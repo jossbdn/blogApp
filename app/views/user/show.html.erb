@@ -1,9 +1,9 @@
 <div class="jumbotron mt-5">
   <h1><%= @author.email %></h1>
-  <p class="lead">Welcome to the <%= @author.username %> profile</p>
+  <p class="lead"><%= t(:welcomeUser, user: @author.username) %></p>
 </div>
 
-<h4 class="mb-5">Last posts <span class="badge badge-secondary"><%= @author.post.count %></span></h4>
+<h4 class="mb-5"><%= t(:lastPosts) %> <span class="badge badge-secondary"><%= @author.post.count %></span></h4>
 
 <div class="row col-sm-12 mb-5">
 <% @author.post.each do |post| %>
@@ -12,14 +12,14 @@
     <div class="card-body">
       <h5 class="card-title"><%= post.title %></h5>
       <p class="card-text"><%= post.content %></p>
-      <%= link_to 'Show', post %>
+      <%= link_to t(:show), post %>
     </div>
   </div>
 </div>
 <% end %>
 </div>
 <hr />
-<h4 class="mt-3 mb-5">Last comments <span class="badge badge-secondary"><%= @author.comment.count %></span></h4>
+<h4 class="mt-3 mb-5"><%= t(:lastComments) %> <span class="badge badge-secondary"><%= @author.comment.count %></span></h4>
 <div class="list-group">
   <% @author.comment.each do |comment| %>
   <a href="<%= url_for post_path(comment.post.id) %>" class="list-group-item list-group-item-action flex-column align-items-start">

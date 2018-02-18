@@ -64,15 +64,27 @@ fr:
         follow_request: Envoyer un courriel lorsque quelqu’un demande à me suivre
         mention: Envoyer un courriel lorsque quelqu’un me mentionne
         reblog: Envoyer un courriel lorsque quelqu’un partage mes statuts
+
+
       post:
         title: Titre
         content: Contenu
         status: Brouillon
+      comment:
+        content: Contenu
+
+
   helpers:
     submit:
       post:
-        create: "Créer le %{model}"
+        create: "Créer l'article"
         update: "Modifier"
+      comment:
+        create: "Créer le commentaire"
+
+
+
+
     'no': Non
     required:
       mark: "*"

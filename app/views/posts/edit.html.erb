@@ -1,8 +1,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><%= link_to 'Home', controller: 'posts', action: 'index' %></li>
-    <li class="breadcrumb-item"><%= link_to 'Posts', controller: 'posts', action: 'index' %></li>
-    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+    <li class="breadcrumb-item"><%= link_to t(:home), controller: 'posts', action: 'index' %></li>
+    <li class="breadcrumb-item"><%= link_to t(:posts), controller: 'posts', action: 'index' %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= t(:new) %></li>
   </ol>
 </nav>
 

@@ -4,9 +4,18 @@ fr:
 
   posts: 'Articles'
   createYourOwnPost: 'Créez votre article'
+  createAndShare: 'Créez et partagez votre article gratuitement'
   new: 'Nouveau'
   show: 'Lire'
-  createPost: 'Créer l'article'
+  edit: 'Modifier'
+  delete: 'Supprimer'
+  createPost: "Créer l'article"
+  areYouSure: 'Êtes vous sûr ?'
+  comments: 'Commentaires'
 
   myAccount: 'Mon compte'
 
+  lastPosts: 'Deniers articles'
+  lastComments: 'Derniers commentaires'
+
+  welcomeUser: 'Bienvenue sur le profil de %{user}'
