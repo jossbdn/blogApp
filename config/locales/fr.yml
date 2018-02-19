@@ -12,6 +12,7 @@ fr:
   createPost: "Créer l'article"
   areYouSure: 'Êtes vous sûr ?'
   comments: 'Commentaires'
+  disconnect: 'Déconnexion'
 
   myAccount: 'Mon compte'
 

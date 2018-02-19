@@ -8,7 +8,7 @@
 
 <article class="card mt-5">
   <div class="card-body">
-    <h1><%= @post.title %> <span class="badge"><%= link_to @post.user.email, controller: 'user', action: 'show', id: @post.user.id %></span></h1>
+    <h1><%= @post.title %> <span class="badge"><%= link_to @post.user.username, controller: 'user', action: 'show', id: @post.user.id %></span></h1>
     <h6><%= local_time_ago(@post.updated_at) %></h6>
     <% if @post.user_id == current_user.id %>
       <%= link_to t(:edit), edit_post_path, class: 'btn btn-info' %>
@@ -29,7 +29,7 @@
           <small><%= local_time_ago(comment.updated_at) %></small>
         </div>
         <p class="mb-1"><%= comment.content %></p>
-        <% if comment.user.id == current_user.id %>
+        <% if comment.user.id == current_user.id or @post.user.id == current_user.id %>
           <%= link_to t(:delete), post_comment_path(comment.post, comment), class: 'btn btn-danger',
                       method: :delete,
                       data: { confirm: t(:areYouSure) }

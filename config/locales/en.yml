@@ -12,6 +12,7 @@ en:
   createPost: "Create post"
   areYouSure: 'Are you sure ?'
   comments: 'Comments'
+  disconnect: 'Sign Out'
 
   myAccount: 'My account'
 
