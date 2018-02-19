@@ -4,6 +4,7 @@
     <title>BlogApp</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,7 +14,9 @@
       <nav class="navbar navbar-light bg-light">
         <div class="container">
           <%= link_to 'BlogApp', root_path(locale: params[:locale]) %>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" style="flex-direction: row">
+            <li style="margin-right: 12px" class="nav-item"><a href="<%= url_for(:locale => 'fr') %>"><span class="flag-icon flag-icon-fr"></span></a></li>
+            <li style="margin-right: 12px" class="nav-item"><a href="<%= url_for(:locale => 'en') %>"><span class="flag-icon flag-icon-gb"></span></a></li>
             <li class="nav-item active">
               <% if user_signed_in? %>
 
