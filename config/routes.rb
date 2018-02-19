@@ -11,6 +11,10 @@ Rails.application.routes.draw do
       resources :comments
     end
 
+    # errors
+    match "/404", :to => "errors#not_found", :via => :all
+    match "/500", :to => "errors#internal_server_error", :via => :all
+
     get '/user/:id', to: 'user#show', as: :user
     get '/auth/:provider/callback', to: 'sessions#create'
     devise_for :users, skip: :omniauth_callbacks

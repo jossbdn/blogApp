@@ -564,7 +564,7 @@ Released under the MIT license
           error: function() {
             var args;
             args = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-            return fire(element, 'ajax:error', args);
+            return fire(element, 'ajax:errors', args);
           },
           complete: function() {
             var args;
